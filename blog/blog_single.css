@@ -946,6 +946,28 @@ font-weight: var(--weight-semiBold);
    }
   
   
+
+    /*-----------------------------------*\
+    TEST
+    \*-----------------------------------*/
+
+    body {
+      font-family: Arial, sans-serif;
+  }
+  .header-with-anchor-widget {
+      margin-top: 30px;
+  }
+  .header-anchor-widget {
+      display: inline-block;
+  }
+  .header-anchor-widget-button {
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+  }
+  .header-anchor-widget-icon {
+      vertical-align: middle;
+  }
   
   
   
