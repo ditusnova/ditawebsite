@@ -657,7 +657,7 @@ font-weight: var(--weight-semiBold);
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: calc(var(--top-bar-height) + 24px); }
+.hero { padding-block-start: calc(var(--top-bar-height) + 100px); }
 
 .hero .container {
   display: grid;
@@ -874,7 +874,7 @@ font-weight: var(--weight-semiBold);
 }
 
 .copyright-footer {
-  color: var(--text--Pink-Lavender);
+  color: var(pin);
   font-size: var(--fontSize-8);
   padding-inline: 16px;
 }
