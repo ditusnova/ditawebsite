@@ -1000,10 +1000,11 @@ font-weight: var(--weight-semiBold);
   color: var(--text-light);
 }
 
-.social .bx:hover{
-  color: var(--text--Sky-Magenta);
-  transition: 0.3s all linear;
-}
+  .icon:hover {
+    transition: 0.3s all linear;
+    filter: brightness(1.5); /* Increase brightness on hover */
+  }
+
 
 
 
