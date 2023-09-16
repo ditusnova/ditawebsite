@@ -11,14 +11,14 @@
 
   --background: hsl(293, 100%, 98%);
   --on-background: hsl(264, 8%, 12%);
-  --surface: hsl(293, 100%, 98%);
-  --on-surface: hsl(264, 8%, 12%);
-  --on-surface-variant: hsl(264, 7%, 29%);
-  --surface-container-low: hsl(278, 44%, 96%);
+  --surface: hsl(276, 38%, 95%);
+  --on-surface:hsla(270, 100%, 25%, 1);
+  --on-surface-variant: hsla(0, 0%, 0%, 1);
+  --surface-container-low:hsl(276, 38%, 95%);
   --surface-container: hsl(276, 38%, 95%);
   --surface-bright: hsl(293, 100%, 98%);
   --primary: hsl(256, 34%, 48%);
-  --on-primary: hsla(269, 62%, 75%,1);
+  --on-primary: hsl(276, 38%, 95%);
   --outline: hsl(270, 4%, 47%);
   --outline-variant: hsl(270, 11%, 79%);
 
@@ -194,7 +194,7 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--bg-main-backroung);
   color: var(--on-background);
   font-size: var(--body-large);
 }
@@ -271,6 +271,15 @@ body {
   font-weight: var(--weight-medium);
   line-height: 20px;
   letter-spacing: 0.1px;
+}
+
+.title-small1 {
+  font-family: var(--font-primary);
+  font-size: var(--title-small);
+  font-weight: var(--weight-medium);
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: var(--text--Pink-Lavender);
 }
 
 .body-large {
@@ -392,8 +401,8 @@ body {
   place-items: center;
   padding-inline: 24px;
   border-radius: var(--border-full);
-  background-color: var(--primary);
-  color: var(--on-primary);
+  background-color: var(--outline-variant);
+  color: var(--outline-variant);
   font-weight: var(--weight-medium);
   overflow: hidden;
   --state-layer-bg: var(--on-primary);
@@ -660,11 +669,11 @@ font-weight: var(--weight-semiBold);
 
 .hero-content { max-width: 500px; }
 
-.hero .section-subtitle { color: var(--on-surface-variant); }
+.hero .section-subtitle { color: var(--text--Pink-Lavender); }
 
 .hero .section-text {
   margin-block: 5px 16px;
-  color: var(--on-surface-variant);
+  color: var(--text--Pink-Lavender);
 }
 
 .hero .btn-wrapper {
@@ -673,6 +682,9 @@ font-weight: var(--weight-semiBold);
   gap: 8px;
 }
 
+.name {
+  color: var(--border-light);
+}
 
 
 
@@ -682,7 +694,7 @@ font-weight: var(--weight-semiBold);
 \*-----------------------------------*/
 
 .about-card {
-  background-color: var(--surface-container-low);
+  background-color: var(--on-primary);
   color: var(--on-surface-variant);
   margin-inline: 16px;
   padding: 16px;
@@ -690,12 +702,12 @@ font-weight: var(--weight-semiBold);
   border-radius: var(--border-large);
 }
 
-.about-card .card-title { color: var(--on-surface); }
+.about-card .card-title { color: var(--ac); }
 
 .about-card .card-text {
   margin-block: 12px;
   padding-block: 12px;
-  border-block: 1px solid var(--outline-variant);
+  border-block: 1px solid var(--bg-sub-background);
 }
 
 .about-list {
@@ -741,11 +753,13 @@ font-weight: var(--weight-semiBold);
   .resume-card {
     display: grid;
     gap: 4px;
+    color: var(--text-white);
   }
   
-  .resume-card .card-subtitle { color: var(--primary); }
+  .resume-card .card-subtitle { color: var(--text--Sky-Magenta); }
 
-  .resume-card .card-text { color: var(--on-surface-variant); }
+  .resume-card .card-text { color: var(--text--Pink-Lavender); }
+  
 
   .resume-bottom-list {
     display: grid;
@@ -754,7 +768,7 @@ font-weight: var(--weight-semiBold);
   }
   
   .resume-bottom-item {
-    background-color: var(--surface-container);
+    background-color: var(--bg—lighter);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -772,7 +786,7 @@ font-weight: var(--weight-semiBold);
   #CONTACT
 \*-----------------------------------*/
 
-.contact-tab { padding-block-end: 0; }
+.contact-tab { padding-block-end: 0; color: var(--text-white); }
 
 .contact-tab .container { padding-block-end: 24px; }
 
@@ -801,7 +815,7 @@ font-weight: var(--weight-semiBold);
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  color: var(--on-surface-variant);
+  color: var(--text-accent);
 }
 
 .info-content {
