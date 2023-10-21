@@ -24,7 +24,7 @@
 
   /** Background Colours **/
   --bg-main-backroung: hsla(280, 60%, 11%,1);
-  --bg-sub-background:hsla(278, 47%, 30%,1);
+  --bg-sub-background:hsla(280, 60%, 10%, 1);
   --bg-light: hsla(269, 62%, 75%,1);
   --bg—lighter: hsla(287, 44%, 80%,1);
   --bg—sub2-background: hsla(316, 26%, 57%,1);
@@ -662,13 +662,13 @@ body {
   align-items: center;
   padding-block-end: 15px;
   margin-block-end: 15px;
-  border-block-end: 1px solid var(--border—sub2-background)
+  border-block-end: 1px solid var(--bg—sub2-background)
 }
 
 .navbar-list { border-block-end: 1px solid var(--border-white-alpha-15); }
 
 .navbar-link {
-  color: var(--text-dark);
+  color: var(--text--Pink-Lavender);
   font-weight: var(--weight-medium);
   padding-block: 10px;
 }
@@ -676,7 +676,7 @@ body {
 .navbar-bottom {
   padding-block: 30px 20px;
   margin-block: 20px 25px;
-  border-block: 1px solid var(--bg-light);
+  border-block: 1px solid var(--text-accent);
 }
 
 .navbar .profile-card { margin-block-end: 15px; }

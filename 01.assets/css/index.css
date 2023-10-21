@@ -42,9 +42,6 @@
   --text--Wisteria: hsla(270, 20%, 60%, 1);
   --text--Pink-Lavender: #c2a3c2;
   --text--Sky-Magenta: hsla(300, 70%, 65%, 1);
-  --text--sub2-background-amethyst: hsla(260, 40%, 50%, 1);
-  --text--sub2-background: hsla(0, 0%, 80%, 1);
-  --text--sub2-background: hsla(0, 0%, 20%, 1);
   --text-dark: hsla(0, 0%, 20%, 1);
   --text-white: hsla(0, 0%, 100%, 1);
 
@@ -1322,7 +1319,7 @@ font-weight: var(--weight-semiBold);
     .header .btn { margin-inline-start: 0; }
 
     .navbar-link {
-      color: var(--text--sub2-background);
+      color: var(--text--Pink-Lavender);
       font-weight: unset;
     }
 
