@@ -1,9 +1,4 @@
-/**
- * @copyright InovatorWawe 2023
- * @author Dita <example@gmail.com>
- */
-
-"use strict";
+'use strict' ;
 
 /* CHIP */
 
