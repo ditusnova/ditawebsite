@@ -22,7 +22,7 @@
 
   /** Background Colours **/
   --bg-main-backroung: hsla(280, 60%, 11%,1);
-  --bg-sub-background:hsla(278, 47%, 30%,1);
+  --bg-sub-background:hsla(240, 44%, 13%, 1);
   --bg-light: hsla(269, 62%, 75%,1);
   --bg—lighter: hsla(287, 44%, 80%,1);
   --bg—sub2-background: hsla(316, 26%, 57%,1);
@@ -404,7 +404,7 @@ body.nav-active { overflow: hidden; }
   left: 0;
   width: 100%;
   padding-block: 24px;
-  background-color: var(--bg-light);
+  background-color: var(--bg-main-backroung);
   z-index: 4;
 }
 
@@ -429,8 +429,8 @@ body.nav-active { overflow: hidden; }
 
 .nav-open-btn,
 .nav-close-btn {
-  color: var(--text--sub2-background);
-  font-size: var(--fontSize-2);
+  color: var(--text-accent);
+  font-size: var(--fontSize-1);
 }
 
 .navbar {
@@ -440,7 +440,7 @@ body.nav-active { overflow: hidden; }
   max-width: 340px;
   width: 100%;
   height: 100vh;
-  background-color: var(--bg-light);
+  background-color: var(--bg-main-backroung);
   padding: 30px;
   z-index: 2;
   overflow-y: auto;
@@ -460,13 +460,13 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   padding-block-end: 15px;
   margin-block-end: 15px;
-  border-block-end: 1px solid var(--border—sub2-background)
+  border-block-end: 1px solid var(--bg-sub-background)
 }
 
 .navbar-list { border-block-end: 1px solid var(--border-white-alpha-15); }
 
 .navbar-link {
-  color: var(--text-dark);
+  color: var(--text--Pink-Lavender);
   font-weight: var(--weight-medium);
   padding-block: 10px;
 }
@@ -474,7 +474,7 @@ body.nav-active { overflow: hidden; }
 .navbar-bottom {
   padding-block: 30px 20px;
   margin-block: 20px 25px;
-  border-block: 1px solid var(--bg-light);
+  border-block: 1px solid var(--text-accent);
 }
 
 .navbar .profile-card { margin-block-end: 15px; }
@@ -494,12 +494,12 @@ font-weight: var(--weight-semiBold);
 
 .navbar-bottom-link {
   color: var(--text-dark);
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-7);
   padding-block: 6px;
 }
 
 .copyright-text {
-  color: var(--text--Dark-Purple);
+  color: var(--text--Pink-Lavender);
   font-size: var(--fontSize-8);
 }
 
