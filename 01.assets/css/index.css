@@ -437,7 +437,7 @@ body.nav-active { overflow: hidden; }
 .navbar .profile-card { margin-block-end: 15px; }
 
 .navbar .profile-card .card-title {
-color: var(--text--Dark-Purple);
+color: var(--text--Pink-Lavender);
 font-size: var(--fontSize-6);
 font-weight: var(--weight-semiBold);
 }
@@ -450,7 +450,7 @@ font-weight: var(--weight-semiBold);
 }
 
 .navbar-bottom-link {
-  color: var(--text-dark);
+  color: var(--text--Pink-Lavender);
   font-size: var(--fontSize-7);
   padding-block: 6px;
 }
