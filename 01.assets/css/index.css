@@ -1,13 +1,9 @@
 /*-----------------------------------*\
   #index.css
 \*-----------------------------------*/
-
 /**
- * copyright 2023 InovatorWawe
+ * copyright 2023 Dita Nova
  */
-
-
-
 
 
 /*-----------------------------------*\
@@ -30,7 +26,19 @@
 
   /**/
 
-
+  /**  Colours  Specific to portfolio section**/  
+  --background: hsla(287, 44%, 80%,1);;
+  --on-background: hsl(264, 8%, 12%);
+  --surface: hsla(287, 44%, 80%,1);;
+  --on-surface:hsla(270, 100%, 25%, 1);
+  --on-surface-variant: hsla(0, 0%, 0%, 1);
+  --surface-container-low:hsla(287, 44%, 80%,1);;
+  --surface-container: hsla(287, 44%, 80%,1);;
+  --surface-bright:hsla(287, 44%, 80%,1);
+  --primary: hsl(256, 34%, 48%);
+  --on-primary: hsla(287, 44%, 80%,1);;
+  --outline: hsl(270, 4%, 47%);
+  --outline-variant: hsl(270, 11%, 79%);
 
 
   /** TEXT COLOURS **/
@@ -84,6 +92,27 @@
 
   /** font Family **/
   --fontFamily-noto_sans: 'Noto Sans', sans-serif;
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Noto Sans', sans-serif;
+
+  
+/* font size */
+--base-font-size: 62.5%;
+--display-large: 5.7rem;
+--display-medium: 4.5rem;
+--display-small: 3.6rem;
+--headline-large: 3.2rem;
+--headline-medium: 2.8rem;
+--headline-small: 2.4rem;
+--title-large: 2rem;
+--title-medium: 1.6rem;
+--title-small: 1.4rem;
+--label-large: 1.4rem;
+--label-medium: 1.2rem;
+--label-small: 1.1rem;
+--body-large: 1.6rem;
+--body-medium: 1.4rem;
+--body-small: 1.2rem;
 
   /** font Size **/
   --fontSize-1: 2.9rem;
@@ -96,6 +125,7 @@
   --fontSize-8: 1.3rem;
 
  /** font weight **/
+ --weight-regular: 400;
  --weight-medium: 500;
  --weight-semiBold: 600;
  --weight-bold: 700;
@@ -123,6 +153,20 @@
  --radius-48: 48px;
  --radius-circle: 50%;
  --radius-pill: 200px;
+ 
+--border-extra-small: 4px;
+--border-small: 8px;
+--border-medium: 12px;
+--border-large: 16px;
+--border-full: 500px;
+--border-circle: 40%;
+
+--elevation-1: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+
+/* Other */
+--section-padding: 24px;
+--top-bar-height: 64px;
+
 
   /** 
   * Spacing
@@ -141,6 +185,28 @@
 
 }
 
+
+/** 
+   * Media for portfolio 
+   */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  :root {
+
+    /* 
+    Transition
+     */
+
+
+    --motion-duration-short-1: 100ms;
+
+
+    --motion-easing-linear: cubic-bezier(0, 0, 1, 1);
+
+  }
+
+}
 
 
 /*-----------------------------------*\
@@ -162,6 +228,7 @@ img,
 span,
 input,
 button,
+textarea { display: block; }
 ion-icon { display: block; }
 
 a {
@@ -216,6 +283,128 @@ body.nav-active { overflow: hidden; }
 }
 
 
+
+/*-----------------------------------*\
+  #TYPOGRAPHY
+\*-----------------------------------*/
+
+.display-large {
+  font-family: var(--font-primary);
+  font-size: var(--display-large);
+  font-weight: var(--weight-regular);
+  line-height: 64px;
+  letter-spacing: -0.25px;
+}
+
+.display-medium {
+  font-family: var(--font-primary);
+  font-size: var(--display-medium);
+  font-weight: var(--weight-regular);
+  line-height: 52px;
+}
+
+.display-small {
+  font-family: var(--font-primary);
+  font-size: var(--display-small);
+  font-weight: var(--weight-regular);
+  line-height: 44px;
+}
+
+.headline-large {
+  font-family: var(--font-primary);
+  font-size: var(--headline-large);
+  font-weight: var(--weight-regular);
+  line-height: 40px;
+}
+
+.headline-medium {
+  font-family: var(--font-primary);
+  font-size: var(--headline-medium);
+  font-weight: var(--weight-regular);
+  line-height: 36px;
+}
+
+.headline-small {
+  font-family: var(--font-primary);
+  font-size: var(--headline-small);
+  font-weight: var(--weight-regular);
+  line-height: 32px;
+}
+
+.title-large {
+  font-family: var(--font-primary);
+  font-size: var(--title-large);
+  font-weight: var(--weight-regular);
+  line-height: 28px;
+  color: var(--bg-main-backroung);
+}
+
+.title-medium {
+  font-family: var(--font-primary);
+  font-size: var(--title-medium);
+  font-weight: var(--weight-medium);
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.title-small {
+  font-family: var(--font-primary);
+  font-size: var(--title-small);
+  font-weight: var(--weight-medium);
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.title-small1 {
+  font-family: var(--font-primary);
+  font-size: var(--title-small);
+  font-weight: var(--weight-medium);
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: var(--text--Pink-Lavender);
+}
+
+.body-large {
+  font-size: var(--body-large);
+  font-weight: var(--weight-regular);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.body-medium {
+  font-size: var(--body-medium);
+  font-weight: var(--weight-regular);
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.body-small {
+  font-size: var(--body-small);
+  font-weight: var(--weight-regular);
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.label-large {
+  font-size: var(--label-large);
+  font-weight: var(--weight-medium);
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.label-medium {
+  font-size: var(--label-medium);
+  font-weight: var(--weight-medium);
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.label-small {
+  font-size: var(--label-small);
+  font-weight: var(--weight-medium);
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
 
 
 
