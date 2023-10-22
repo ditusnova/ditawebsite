@@ -8,30 +8,37 @@
   
   <title>Let's Work Together!</title>
 
-<!-- favicon-->
+  <!-- favicon-->
 
-<link rel="shortcut icon" href="./03.Identity/01.logos/logo-dita.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="/03.Identity/01.logos/favicon.svg" type="image/svg+xml">
 
 <!-- Google fonts-->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+     <!-- 
+    - material icon link
+    -->
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <!-- custom css link -->
-  <link rel="stylesheet" href="./01.assets/css/portfolio.css">
-  <link rel="stylesheet" href="/node_modules/boxicons/css/boxicons.min.css">
+<link rel="stylesheet" href="/01.assets/css/portfolio.css">
+<link rel="stylesheet" href="/node_modules/boxicons/css/boxicons.min.css">
 
-<link rel="preload" as="image" href="./02.Resources/01.Graphic/hero-banner.png">
-<link rel="preload" as="image" href="./02.Resources/01.Graphic/pattern-2.svg">
-<link rel="preload" as="image" href="/02.Resources/01.Graphic/pattern-3.svg">
+<script src="https://kit.fontawesome.com/257131b751.js" crossorigin="anonymous"></script>
+
 
 </head>
 
 <body id="top">
 
-<!-- header -->
+    <!-- 
+    - #TOP BAR
+  -->
 
 <header class="header" data-header> 
     <div class="container">
@@ -43,9 +50,9 @@
     <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-                <a href="#" class="logo">
-                    <img src="./03.Identity/01.logos/logo2.svg" width="60" height="19" alt="Dita logo">
-                </a>
+            <a href="#" class="logo">
+                <img src="/03.Identity/01.logos/logo2.svg" width="60" height="19" alt="Dita logo">
+            </a>
 
             <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
                 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -63,11 +70,11 @@
         </li>
 
         <li>
-            <a href="blog/blog_main.html" class="navbar-link hover-1" data-nav-toggler>Blog</a>
+            <a href="/blog/blog_main.html" class="navbar-link hover-1" data-nav-toggler>Blog</a>
         </li>
 
         <li>
-            <a href="coming_soon.html" class="navbar-link hover-1" data-nav-toggler>Portfolio</a>
+            <a href="portfolio.html" class="navbar-link hover-1" data-nav-toggler>Portfolio</a>
         </li> 
 
         <li>
@@ -98,7 +105,7 @@
             </ul>
   
 
-        </div> -->
+        </div>    --> 
     
         <p class="copyright-text">
             Copyright 2023 © Dita Nova
@@ -108,7 +115,7 @@
 
     <!-- HIRE BUTTON -->
 
-    <a href="mailto:your_email@example.com" class="btn btn-primary">Hire Me</a>
+    <a href="mailto:dita@dita-nova.com?Subject=Inquiry" class="btn btn-primary">Hire Me</a>
 
     <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -121,7 +128,7 @@
 
 
 <main>
-    <article>
+   <article>
 
     <!-- HERO-->
 
@@ -651,27 +658,47 @@
 
         </div>
                
-
-      
-
-    </article>
+   </article>
 </main>
+
+
+
+
+
+ <!--
+    Footer
+-->
+
+
+
 
  <div class="footer container">
     <p>
         &#169; Dita Nova 2023 All Rights Reserved
     </p>
     <div class="social">
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-pinterest"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="#" class="social-item">
+            <img src="02.Resources/02.Icons/bxl-linkedin-square.svg" width="20" height="20" loading="lazy" alt="LinkedIn" class="icon">
+        </a>
+
+        <a href="#" class="social-item">
+            <img src="02.Resources/02.Icons/bxl-twitter2.svg" width="20" height="20" loading="lazy" alt="LinkedIn" class="icon">
+        </a>
+        <a href="#" class="social-item">
+            <img src="02.Resources/02.Icons/bxl-pinterest.svg" width="20" height="20" loading="lazy" alt="LinkedIn" class="icon">
+        </a>
+
+        <a href="#" class="social-item">
+            <img src="02.Resources/02.Icons/bxl-instagram-alt.svg" width="20" height="20" loading="lazy" alt="LinkedIn" class="icon">
+        </a>
+
+        <a href="#" class="social-item">
+            <img src="02.Resources/02.Icons/bxl-facebook-square.svg" width="20" height="20" loading="lazy" alt="LinkedIn" class="icon">
+        </a> 
     </div>
  </div>
-
-
-
+   
+    
 
 
  <!-- BACK TO TOP -->
@@ -681,16 +708,12 @@
  </a>
 
 
-<!-- custom js link-->  
-<script src="./01.assets/scripts/script-index.js"> </script>
-
-
-
-
+ <!-- custom js link-->  
+<script src="/01.assets/scripts/script-contact.js"> </script>
 <!-- ionicon link-->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
+   
 </body>
+
 </html>
