@@ -596,15 +596,19 @@ font-weight: var(--weight-semiBold);
   
   .footer p{
     font-size: 0.938rem;
+ 
   }
   
   .social {
     display: flex;
     align-items: center;
     column-gap: 1rem;
-  
   }    
   
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
   .social .bx {
     font-size: 1.4rem;
     color: var(--text-light);
@@ -614,10 +618,8 @@ font-weight: var(--weight-semiBold);
       transition: 0.3s all linear;
       filter: brightness(1.5); /* Increase brightness on hover */
     }
-  
 
-
-  
+    
   /*-----------------------------------*\
     #BACK TO TOP
   \*-----------------------------------*/
