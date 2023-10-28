@@ -3,6 +3,11 @@
 /* CHIP */
 
 
+const addEventOnElements = function (elements, eventType, callback) {
+    for (let i = 0, len = elements.length; i < len; i++) {
+        elements[i].addEventListener(eventType, callback);
+    }
+}
 
 
 
@@ -34,17 +39,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Automatically select the "Contact" tab
-    const contactTab = document.querySelector('[data-tab-btn="contact"]');
-    contactTab.classList.add('active');
-    
-    // Your existing code...
-});
-
 /* TAB */
-
 
 const /* {NodeList} */ $tabBtn = document.querySelectorAll("[data-tab-btn]");
 let /* {NodeElement} */ [lastActiveTab] = document.querySelectorAll("[data-tab-content]");
@@ -62,4 +57,9 @@ $tabBtn.forEach(item => {
         lastActiveTab = $tabContent;
         lastActiveTabBtn = this;
     });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contactTabBtn = document.querySelector("[data-tab-btn='contact']");
+    contactTabBtn.click();
 });

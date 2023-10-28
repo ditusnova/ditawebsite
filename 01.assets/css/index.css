@@ -1177,6 +1177,8 @@ font-weight: var(--weight-semiBold);
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  margin: 0 auto;
+  z-index: 1;
 }    
 
 .social .bx {
@@ -1188,6 +1190,8 @@ font-weight: var(--weight-semiBold);
     transition: 0.3s all linear;
     filter: brightness(1.5); /* Increase brightness on hover */
   }
+
+
 
 
 
