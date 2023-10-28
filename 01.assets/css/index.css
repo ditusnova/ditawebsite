@@ -534,7 +534,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -1177,8 +1176,7 @@ font-weight: var(--weight-semiBold);
   display: flex;
   align-items: center;
   column-gap: 1rem;
-  margin: 0 auto;
-  z-index: 1;
+
 }    
 
 .social .bx {
